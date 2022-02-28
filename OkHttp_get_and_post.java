@@ -53,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
     public void SyncPost(View view){
         new Thread(){
             public void run(){
+                /*
+                File file1 = new File("C:\\Users\\jink\\Desktop\\test1.txt");
+                MultipartBody multipartBody = new MultipartBody.Builder()
+                .addFormDataPart("file1", file1.getName(), RequestBody.create(file1, MediaType.parse("text/plain")))
+                .build();
+                服务器接收文件名(键)，发送文件名(值)，文件类型
+                
+                RequestBody requestBody = RequestBody.create("{\"a\":1,\"b\":2}",MediaType.parse("application/json"));
+                */
                 FormBody formBody = new FormBody.Builder().add("a","1").add("b","2").build();
                 Request request = new Request.Builder().url("https://www.httpbin.org/post").post(formBody).build();
                 Call call = okHttpClient.newCall(request);
