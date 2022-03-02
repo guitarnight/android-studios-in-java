@@ -17,6 +17,6 @@ public interface WanandroidService {
     Flowable<BaseResponse> login(@Field("username") String username, @Field("password") String pwd);
 
     @GET("lg/collect/list/{pageNum}/json")
-    //就拿String查看返回的文章列表吧，不然也可以自己写一个类
+    //就拿String打印返回的文章列表吧，不然需要json一个类
     Flowable<ResponseBody> getArticle(@Path("pageNum") int pageNum);
 }
