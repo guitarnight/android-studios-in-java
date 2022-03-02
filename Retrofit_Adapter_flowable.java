@@ -1,9 +1,8 @@
-implementation 'com.google.android.materialmaterial1.3.0'
-implementation(com.squareup.retrofit2retrofit2.9.0)
-implementation(com.squareup.retrofit2adapter-rxjava32.9.0)
-implementation(io.reactivex.rxjava3rxandroid3.0.0)
-implementation(com.squareup.retrofit2converter-gson2.9.0)
-implementation('com.google.code.gsongson2.9.0')
+implementation("com.squareup.retrofit2:retrofit:2.9.0")
+implementation("com.squareup.retrofit2:adapter-rxjava3:2.9.0")
+implementation("io.reactivex.rxjava3:rxandroid:3.0.0")
+implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+implementation('com.google.code.gson:gson:2.9.0')
 
 package com.example.retrofit03;
 
